@@ -9,7 +9,7 @@ check-regress:
 	@echo "RUNTESTFLAGS: $(RUNTESTFLAGS)"
 	@echo "RUNTESTFLAGS_INTERNAL: $(RUNTESTFLAGS_INTERNAL)"
 
-	@$(PERL) $(topsrcdir)/regress/run_test.pl $(RUNTESTFLAGS) $(RUNTESTFLAGS_INTERNAL) $(TESTS)
+	@$(PERL) $(topsrcdir)/regress/run_test.pl $(RUNTESTFLAGS_INTERNAL) $(RUNTESTFLAGS) $(TESTS)
 
 	#
 	# Will now run upgrade test if RUNTESTFLAGS was not already doing that
